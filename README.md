@@ -1,0 +1,21 @@
+
+Cloud_Discovery
+
+```
+cd Cloud_Discovery
+gradle cleanEclipse eclipse
+```
+
+# Eureka 介绍和案例
+
+## Eureka_RegistryServer 
+	eureka-server & spring-boot (8761)
+
+## Eureka_Say_Hello_Service 
+	eureka-client & spring-boot (8090, 8091, 8092)
+
+## Eureka_User
+	ribbon & spring-boot (8080)
+
+TODO跨IP注册和发现...
+
