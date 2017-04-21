@@ -4,10 +4,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 
 import com.netflix.client.config.IClientConfig;
-import com.netflix.loadbalancer.AvailabilityFilteringRule;
 import com.netflix.loadbalancer.IPing;
 import com.netflix.loadbalancer.IRule;
 import com.netflix.loadbalancer.PingUrl;
+import com.netflix.loadbalancer.RandomRule;
 
 public class SayHelloConfiguration {
 
@@ -21,7 +21,8 @@ public class SayHelloConfiguration {
 
 	@Bean
 	public IRule ribbonRule(IClientConfig config){
-		return new AvailabilityFilteringRule();
+		return new RandomRule();
+		//return new AvailabilityFilteringRule();
 	}
 }
 

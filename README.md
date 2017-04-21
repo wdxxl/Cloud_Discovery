@@ -4,6 +4,8 @@ Cloud_Discovery
 ```
 cd Cloud_Discovery
 gradle cleanEclipse eclipse
+
+sudo vim /private/etc/hosts
 ```
 
 # Eureka 介绍和案例
@@ -19,3 +21,4 @@ gradle cleanEclipse eclipse
 
 TODO跨IP注册和发现...
 
+# Consul 

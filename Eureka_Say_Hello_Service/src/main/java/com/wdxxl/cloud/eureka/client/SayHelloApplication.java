@@ -23,13 +23,15 @@ public class SayHelloApplication {
 	@Value("${server.port}")
 	String serverPort;
 
+    @Value("${server.address}")
+	String serverAddress;
+
 	@RequestMapping(value = "/greeting")
 	public String greet(){
 		log.info("Access /greeting");
-		List<String> greetings = Arrays.asList("Hi there", "FlatironsSolutions", "Let's do something funny.");
+		List<String> greetings = Arrays.asList("Hi There", "FlatironsSolutions", "Let's do something funny.");
 		Random rand = new Random();
 		int randomNum = rand.nextInt(greetings.size());
-
 		return serverPort + " : " + greetings.get(randomNum);
 	}
 

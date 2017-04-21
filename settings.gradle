@@ -4,3 +4,4 @@ rootProject.name = 'Cloud_Discovery'
 include 'Eureka_RegistryServer'
 include 'Eureka_Say_Hello_Service'
 include 'Eureka_User'
+
