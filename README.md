@@ -21,4 +21,9 @@ sudo vim /private/etc/hosts
 
 TODO跨IP注册和发现...
 
+查询那些有效的Client正在服务器里面 返回json
+http://localhost:8761/eureka/apps
+
+Refer this link: https://github.com/Netflix/eureka/wiki/Eureka-REST-operations
+
 # Consul 
